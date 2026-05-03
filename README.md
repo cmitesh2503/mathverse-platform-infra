@@ -1,6 +1,23 @@
 # mathverse-platform-infra
 Prepared Mathverse application Infra on GKE using Gitlabs, tearraform,ci/cd integration
 
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/cbef3c4d-38db-49ab-835b-dfcb9a939719" />
+
+<img width="1147" height="860" alt="image" src="https://github.com/user-attachments/assets/5d3b2afa-120f-4977-9243-1d42b20bcac4" />
+
+<img width="1512" height="860" alt="image" src="https://github.com/user-attachments/assets/fc0f2620-02a9-48f0-8390-dae3b7ca9aa3" />
+
+<img width="986" height="491" alt="image" src="https://github.com/user-attachments/assets/0f5c41ec-331f-4c31-8652-2503142a444f" />
+
+<img width="1881" height="2016" alt="image" src="https://github.com/user-attachments/assets/29214b28-8f3c-4c79-8d11-7daa28f9e7f0" />
+
+<img width="751" height="514" alt="image" src="https://github.com/user-attachments/assets/a61661a8-5d5a-4b56-85ea-065266160bb9" />
+
+<img width="985" height="729" alt="image" src="https://github.com/user-attachments/assets/e5d908bf-036a-433c-bfe2-15b6a4ec800d" />
+
+
+
+
 **🔹 Core Components**
 Infra (Terraform - Modular)
 VPC
@@ -16,32 +33,7 @@ Helm (base templates)
 Kustomize (env overrides)
 CI/CD
 
-**Using GitLab:**
 
-Build → Push → Deploy to GKE
-🧠 Learning Approach (This is KEY)
-
-You said:
-
-“Explain every line and why”
-
-So here’s how I’ll teach you:
-
-🔍 Every Terraform block = Explained like this:
-resource "google_compute_network" "vpc" {
-  name                    = "mathverse-vpc"
-  auto_create_subnetworks = false
-}
-
-I will explain:
-
-resource → what concept
-"google_compute_network" → why this resource
-"vpc" → naming reference
-each parameter → why needed
-what happens if removed
-
-👉 No blind coding.
 
 🧩 Terraform Structure (Production Style)
 
