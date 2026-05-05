@@ -19,17 +19,26 @@ region = var.region
 }
 
 module "gke" {
-source = "../../modules/gke"
+ source = "../../modules/gke"
 
-cluster_name = "mathverse-gke-dev"
-location     = "asia-south1-a"
-network      = module.vpc.vpc_id
-subnetwork   = module.vpc.subnet_ids["subnet1"]
+ cluster_name = "mathverse-gke-dev"
+ location     = "asia-south1-a"
+ network      = module.vpc.vpc_id
+ subnetwork   = module.vpc.subnet_ids["subnet1"]
 
-node_pools   = {
+ node_pools   = {
      default = {
         machine_type = "e2-medium"
         node_count   = 1
     }
+ }
 }
+
+module "artifact_registry" {
+ source = "../../modules/artifact-registry"
+
+ repository_id = "mathverse-repo"
+ location      = var.region
+ description   = "Docker repo for Mathverse"
+ project_id    = var.project_id
 }
